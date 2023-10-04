@@ -17,7 +17,7 @@ const Carousel = () => {
     };
     const imgStyle = {
         width: '100%',
-        maxHeight: '80vh'
+        maxHeight: '90vh'
     };
 
     return (

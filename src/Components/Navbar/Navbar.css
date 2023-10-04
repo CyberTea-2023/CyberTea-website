@@ -51,6 +51,10 @@ nav h1 img {
     max-width: 700px;
 }
 
+.cover-nav-space {
+    height: 50px;
+}
+
 @media (max-width: 650px) {
     #nav-right {
         flex-direction: column;
@@ -85,8 +89,8 @@ nav h1 img {
         flex-direction: column;
         height: fit-content;
     }
-}
 
-.cover-nav-space {
-    height: 50px;
+    .cover-nav-space {
+        height: 60px;
+    }
 }
