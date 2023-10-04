@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
+import logo from '../../assets/iiits logo.png'
 import "./Navbar.css"
-// import { Link } from 'react-router-dom'
 
 export default function Navbar() {
 
@@ -14,32 +14,30 @@ export default function Navbar() {
         <>
             <nav>
                 <div className="mobview">
-                    <h1>CyberTEA</h1>
+                    <h1><img src={logo} alt="iiits" /> CyberTea</h1>
                     <span id='hamburger' className={`material-symbols-outlined ${expand ? `expand` : ``}`} onClick={NavToggle} >
                         menu
                     </span>
                 </div>
                 <ul id='nav-right' className={expand ? `expand` : ``}>
-                    {/* <li onClick={() => {
-                        expand ? NavToggle() : ``
-                    }}><Link to={'/'}>Home</Link></li>
                     <li onClick={() => {
                         expand ? NavToggle() : ``
-                    }}><Link to={'/projects'}>Projects</Link></li>
+                    }}>About</li>
                     <li onClick={() => {
                         expand ? NavToggle() : ``
-                    }}><Link to={'/contact'}>Contact</Link></li> */}
+                    }}>Speakers</li>
                     <li onClick={() => {
                         expand ? NavToggle() : ``
-                    }}>Home</li>
+                    }}>News</li>
                     <li onClick={() => {
                         expand ? NavToggle() : ``
-                    }}>Projects</li>
+                    }}>Schedule</li>
                     <li onClick={() => {
                         expand ? NavToggle() : ``
-                    }}>Contact</li>
+                    }}>Register</li>
                 </ul>
             </nav>
+            <div className="cover-nav-space"></div>
         </>
     )
 }

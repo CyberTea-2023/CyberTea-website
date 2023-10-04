@@ -18,6 +18,16 @@ nav {
 nav h1 {
     font-size: 30px;
     font-family: monospace;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav h1 img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
 }
 
 #hamburger {
@@ -35,9 +45,10 @@ nav h1 {
 
 #nav-right {
     display: flex;
-    width: 300px;
+    width: 60%;
     justify-content: space-between;
     align-items: center;
+    max-width: 700px;
 }
 
 @media (max-width: 650px) {
@@ -50,7 +61,7 @@ nav h1 {
     }
 
     #nav-right.expand {
-        height: 100px;
+        height: 200px;
         margin-top: 20px;
     }
 
@@ -74,4 +85,8 @@ nav h1 {
         flex-direction: column;
         height: fit-content;
     }
+}
+
+.cover-nav-space {
+    height: 50px;
 }

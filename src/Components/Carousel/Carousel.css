@@ -1,0 +1,20 @@
+.carousel-container {
+    width: 100%;
+    height: fit-content;
+    margin: 0 auto;
+}
+
+.slick-arrow {
+    cursor: pointer;
+    position: absolute;
+    z-index: 1;
+    top: 49%;
+}
+
+.slick-prev {
+    left: 10px;
+}
+
+.slick-next {
+    right: 10px;
+}
