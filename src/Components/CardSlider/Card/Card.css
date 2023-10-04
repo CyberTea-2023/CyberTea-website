@@ -80,3 +80,14 @@
     align-items: center;
     justify-content: space-evenly;
 }
+
+@media (max-width: 500px) {
+    .inner-card img {
+        width: calc(var(--cardWidth) - 50px);
+        height: calc(var(--cardWidth) - 50px);
+    }
+
+    .inner-card {
+        font-size: 0.7rem;
+    }
+}

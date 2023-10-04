@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import useEmblaCarousel from 'embla-carousel-react'
 import './CardSlider.css'
 import Card from './Card/Card'
@@ -20,7 +20,15 @@ import p14 from '../../assets/Speakers/DR.DEEPAK.jpeg'
 import p15 from '../../assets/Speakers/Ravi.jpg'
 
 export const CardSlider = () => {
-  const [emblaRef] = useEmblaCarousel({ loop: true }, [Autoplay({ speed: 2000 })]);
+  const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true }, [Autoplay({ speed: 2000 })]);
+
+  const initialSlideIndex = 4;
+
+  useEffect(() => {
+    if (emblaApi) {
+      emblaApi.scrollTo(initialSlideIndex, true);
+    }
+  }, [emblaApi, initialSlideIndex]);
 
 
   return (
