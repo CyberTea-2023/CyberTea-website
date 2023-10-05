@@ -1,3 +1,7 @@
+#card-slider .heading {
+    margin: 20px auto;
+}
+
 .embla {
     overflow: hidden;
     display: flex;

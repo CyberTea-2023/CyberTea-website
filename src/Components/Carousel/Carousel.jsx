@@ -21,7 +21,7 @@ const Carousel = () => {
     };
 
     return (
-        <div className="carousel-container">
+        <div id="carousel">
             <Slider {...settings}>
                 <div>
                     <img src={banner} alt="Slide 1" style={imgStyle} />

@@ -16,3 +16,7 @@
   left: 0;
   background: radial-gradient(circle at top left, rgb(0 30 55), rgb(3 54 86));
 }
+
+html {
+  scroll-behavior: smooth;
+}

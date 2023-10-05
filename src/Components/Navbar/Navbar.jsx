@@ -10,6 +10,20 @@ export default function Navbar() {
         setExpand(!expand)
     }
 
+    const scrollToSection = (e) => {
+        e.preventDefault();
+        const targetId = e.target.getAttribute("href").substring(1);
+        const targetElement = document.getElementById(targetId);
+        if (targetElement) {
+            const offset = 50;
+            const targetPosition = targetElement.offsetTop - offset;
+            window.scrollTo({
+                top: targetPosition,
+                behavior: "smooth"
+            });
+        }
+    };
+
     return (
         <>
             <nav>
@@ -22,16 +36,16 @@ export default function Navbar() {
                 <ul id='nav-right' className={expand ? `expand` : ``}>
                     <li onClick={() => {
                         expand ? NavToggle() : ``
-                    }}>About</li>
+                    }}><a href="#about" onClick={scrollToSection}>About</a></li>
                     <li onClick={() => {
                         expand ? NavToggle() : ``
-                    }}>Speakers</li>
+                    }}><a href="#card-slider" onClick={scrollToSection}>Speakers</a></li>
                     <li onClick={() => {
                         expand ? NavToggle() : ``
-                    }}>News</li>
+                    }}><a href="#news" onClick={scrollToSection}>News</a></li>
                     <li onClick={() => {
                         expand ? NavToggle() : ``
-                    }}>Schedule</li>
+                    }}> <a href="#schedule" onClick={scrollToSection}>Schedule</a></li>
                     <li onClick={() => {
                         expand ? NavToggle() : ``
                     }}>Register</li>

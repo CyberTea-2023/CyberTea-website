@@ -32,7 +32,7 @@ export const CardSlider = () => {
 
 
   return (
-    <div className="card-slider">
+    <div id="card-slider">
       <h1 className="heading">Speakers</h1>
       <div className="embla" ref={emblaRef}>
         <div className="embla__container">
