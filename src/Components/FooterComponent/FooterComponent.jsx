@@ -39,7 +39,7 @@ const FooterComponent = () => {
                         </a>
                     </li>
                     <li className="menu__item">
-                        <a className="menu__link" href="#card-slider" onClick={scrollToSection}>
+                        <a className="menu__link" href="#speakers" onClick={scrollToSection}>
                             Speakers
                         </a>
                     </li>

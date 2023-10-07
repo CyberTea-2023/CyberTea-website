@@ -39,7 +39,7 @@ export default function Navbar() {
                     }}><a href="#about" onClick={scrollToSection}>About</a></li>
                     <li onClick={() => {
                         expand ? NavToggle() : ``
-                    }}><a href="#card-slider" onClick={scrollToSection}>Speakers</a></li>
+                    }}><a href="#speakers" onClick={scrollToSection}>Speakers</a></li>
                     <li onClick={() => {
                         expand ? NavToggle() : ``
                     }}><a href="#news" onClick={scrollToSection}>News</a></li>
