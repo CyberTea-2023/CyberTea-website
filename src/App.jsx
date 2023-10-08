@@ -4,6 +4,7 @@ import Navbar from "./Components/Navbar/Navbar"
 import './App.css'
 import NewsSchedule from "./Components/NewsSchedule/NewsSchedule"
 import FooterComponent from "./Components/FooterComponent/FooterComponent"
+import Registration from "./Components/Registration/Registration"
 
 function App() {
 
@@ -13,6 +14,7 @@ function App() {
       <Carousel />
       <CardSlider />
       <NewsSchedule />
+      <Registration />
       <FooterComponent />
     </>
   )

@@ -48,7 +48,7 @@ export default function Navbar() {
                     }}> <a href="#schedule" onClick={scrollToSection}>Schedule</a></li>
                     <li onClick={() => {
                         expand ? NavToggle() : ``
-                    }}><a href="/will-be-provided-later" noreferrer target='_blank'>Register</a></li>
+                    }}><a href="#registration" onClick={scrollToSection}>Register</a></li>
                 </ul>
             </nav>
             <div className="cover-nav-space"></div>
