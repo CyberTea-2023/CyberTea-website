@@ -15,7 +15,7 @@ export default function Navbar() {
         const targetId = e.target.getAttribute("href").substring(1);
         const targetElement = document.getElementById(targetId);
         if (targetElement) {
-            const offset = 50;
+            const offset = 70;
             const targetPosition = targetElement.offsetTop - offset;
             window.scrollTo({
                 top: targetPosition,
