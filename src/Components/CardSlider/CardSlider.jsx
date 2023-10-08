@@ -4,30 +4,48 @@ import './CardSlider.css';
 import Card from './Card/Card';
 import Autoplay from 'embla-carousel-autoplay';
 
-import speakersData from './speakersData';
+import speakersData from './speakersData'; // Import your data here
 
 export const CardSlider = () => {
-  const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true }, [Autoplay({ speed: 2000 })]);
+  const [academicEmblaRef, academicEmblaApi] = useEmblaCarousel(
+    { loop: true },
+    [Autoplay({ speed: 2000 })]
+  );
+
+  const [industryEmblaRef, industryEmblaApi] = useEmblaCarousel(
+    { loop: true },
+    [Autoplay({ speed: 2000 })]
+  );
 
   useEffect(() => {
-    if (emblaApi) {
-      emblaApi.scrollTo(5, true);
+    if (academicEmblaApi) {
+      academicEmblaApi.scrollTo(1, true);
     }
-  }, [emblaApi]);
+    if (industryEmblaApi) {
+      industryEmblaApi.scrollTo(2, true);
+    }
+  }, [academicEmblaApi, industryEmblaApi]);
+
+  const academicSpeakers = speakersData.filter((speaker) => speaker.category === 'Academic');
+  const industrySpeakers = speakersData.filter((speaker) => speaker.category === 'Industry');
 
   return (
     <div id="speakers">
       <h1 className="heading">Speakers</h1>
-      <div className="embla" ref={emblaRef}>
+      <div className="embla industry" ref={industryEmblaRef}>
         <div className="embla__container">
-          {speakersData.map((speaker, index) => (
+          {industrySpeakers.map((speaker, index) => (
             <div className="embla__slide" key={index}>
-              <Card
-                photo={speaker.photo}
-                name={speaker.name}
-                abt={speaker.abt}
-                link={speaker.link}
-              />
+              <Card photo={speaker.photo} name={speaker.name} abt={speaker.abt} link={speaker.link} />
+            </div>
+          ))}
+        </div>
+      </div>
+      <div className="embla academic" ref={academicEmblaRef}>
+        <div className="embla__container">
+          {academicSpeakers.map((speaker, index) => (
+            <div className="embla__slide" key={index}>
+              <Card photo={speaker.photo} name={speaker.name} abt={speaker.abt} link={speaker.link} />
             </div>
           ))}
         </div>

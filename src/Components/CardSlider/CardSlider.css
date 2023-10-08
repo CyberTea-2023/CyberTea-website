@@ -27,3 +27,11 @@
     align-items: center;
     justify-content: center;
 }
+
+.academic .embla__slide {
+    flex: 0 0 30%;
+}
+
+.industry .embla__slide {
+    flex: 0 0 20%;
+}
