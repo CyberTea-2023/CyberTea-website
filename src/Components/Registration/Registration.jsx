@@ -24,7 +24,7 @@ const Registration = () => {
                         </li>
                     </ol>
                 </div>
-                <div className="mt-4">
+                <div className="mt-4 table-container">
                     <h3 className="text-lg lg:text-xl text-yellow-400 yellowHeadingStyle">
                         Registration Fee
                     </h3>

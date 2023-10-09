@@ -29,13 +29,6 @@ const Carousel = () => {
                     <img src={banner} alt="Slide 3" className='carousel-image' />
                 </div>
             </Slider>
-            <div className="intro-text">
-                <h2>Dive into the Cyber Frontier with Top Experts at CyberTea! 🚀🔐</h2>
-                <h3>From: <span>11th December, 2023</span></h3>
-                <h3>To: <span>16th December, 2023</span></h3>
-                <h3>Venue: <span>Online & IIITS</span></h3>
-                <h3>Organized by: <a href="https://www.iiits.ac.in/" target="_blank" rel="noopener noreferrer">Indian Institute of Information Technoloyg, Sri City</a></h3>
-            </div>
         </div>
     );
 };

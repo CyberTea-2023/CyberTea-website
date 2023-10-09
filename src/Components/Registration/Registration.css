@@ -20,6 +20,13 @@
     background-color: #FFCD4B;
 }
 
+.table-responsive {
+    display: flex;
+    justify-content: center;
+    max-width: 100vw;
+    overflow-x: auto;
+}
+
 .headingStyle {
     color: #FFFFFF;
     text-align: center;
@@ -52,13 +59,8 @@
         margin-top: 1rem;
     }
 
-    .table-responsive {
-        max-width: 100vw;
-        overflow-x: auto;
-    }
-
     .table-auto {
-        width: 100%;
+        width: fit-content;
         overflow-x: auto;
     }
 
