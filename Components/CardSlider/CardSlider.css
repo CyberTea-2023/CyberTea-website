@@ -9,10 +9,10 @@
 }
 
 #speaker_container {
-  background-color: rgba(205, 230, 251, 1);
   width: 100%;
   padding: 3rem 0;
 }
+
 .heading {
   text-align: center;
   font-family: "Oswald", sans-serif;
@@ -22,6 +22,7 @@
   color: #ffc436;
   border-bottom: 1px solid #ffc436;
 }
+
 #speakers .heading {
   margin-bottom: 25px;
 }

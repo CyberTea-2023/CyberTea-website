@@ -13,9 +13,11 @@
 .header_container h1 {
   color: #ffc436;
 }
+
 .header_container span {
   color: azure;
 }
+
 .header_container h1,
 span {
   font-size: 4.5rem;
@@ -28,11 +30,13 @@ span {
   font-size: 1.5rem;
   color: #ffc436;
 }
+
 .div_holder {
   width: -moz-fit-content;
   width: fit-content;
   padding: 0.5rem;
 }
+
 .sub_header {
   color: #fff;
   z-index: 10;
@@ -65,6 +69,7 @@ span {
 }
 
 @keyframes blink-caret {
+
   from,
   to {
     border-color: transparent;
@@ -74,11 +79,13 @@ span {
     border-color: rgb(59, 155, 215);
   }
 }
+
 @media (max-width: 1000px) {
   .header_container {
     width: 100%;
     right: 0;
   }
+
   .header_container h1,
   span {
     font-size: 3.8rem;
@@ -86,6 +93,7 @@ span {
 }
 
 @media (max-width: 800px) {
+
   .header_container h1,
   span {
     font-size: 3rem;
@@ -96,11 +104,13 @@ span {
   .header_container {
     align-items: center;
   }
+
   .header_container h1,
   span {
     font-size: 2rem;
     text-align: center;
   }
+
   .header_container p {
     font: 1rem;
   }

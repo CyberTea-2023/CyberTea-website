@@ -8,9 +8,27 @@
   color: white;
 }
 
+/* 
 body {
-  background: linear-gradient( rgb(0 30 55), rgb(3 54 86));
+  background: radial-gradient(circle at top left, rgb(0 30 55) 50%, rgb(3 54 86) 50%);
+  transition: background 0.5s ease;
+} */
+
+#root {
+  --gradient-top: rgb(0, 30, 55) 50%;
+  --gradient-bottom: rgb(3, 54, 86) 50%;
+
 }
+
+@media (max-width: 950px) {
+  #root {
+    --gradient-top: rgb(0, 30, 55) 70%;
+    --gradient-bottom: rgb(3, 54, 86) 30%;
+
+  }
+
+}
+
 #root::before {
   content: "";
   width: 100vw;
@@ -19,12 +37,15 @@ body {
   z-index: -10;
   top: 0;
   left: 0;
+  background-image: radial-gradient(circle at top left, var(--gradient-top), var(--gradient-bottom));
+  transition: background-image 0.3s ease;
 }
 
 html {
   overflow-x: hidden;
   scroll-behavior: smooth;
 }
+
 .globeContainer {
   height: 100vh;
   transition: 0.25s;
