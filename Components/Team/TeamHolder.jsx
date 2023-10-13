@@ -31,33 +31,18 @@ export default function TeamHolder() {
             name="Vinayak Anand"
             title="Web Development Lead, IOTA IIITS"
           />
-          <TeamCard
-            name="Charishma Bollineni"
-            link="hhttps://www.linkedin.com/in/charishma-bollineni-46a625283"
-            title="Web Development Lead, IOTA IIITS"
-          />
         </div>
         <h2>Design Team</h2>
         <div className="team_con">
           <TeamCard
-            link="https://www.linkedin.com/in/nikhil-tripathi/"
-            name="Nikhil Tripathi"
-            title="Assistant Professor, IIIT Sri City"
+            link="https://www.linkedin.com/in/akansh-vaibhav-040524222"
+            name="Akansh Vaibhav"
+            title="Design Team, IOTA IIITS"
           />
           <TeamCard
-            name="Dr. Neha Agrawal"
-            link="https://www.linkedin.com/in/dr-neha-agrawal-0a32776b/"
-            title="Assistant Professor, IIIT Sri City"
-          />
-          <TeamCard
-            link="https://www.linkedin.com/in/nikhil-tripathi/"
-            name="Nikhil Tripathi"
-            title="Assistant Professor, IIIT Sri City"
-          />
-          <TeamCard
-            name="Dr. Neha Agrawal"
-            link="https://www.linkedin.com/in/dr-neha-agrawal-0a32776b/"
-            title="Assistant Professor, IIIT Sri City"
+            name="Ayan Raza"
+            link="https://www.linkedin.com/in/iamayan2011/"
+            title="Design Team, IOTA IIITS"
           />
         </div>
       </div>

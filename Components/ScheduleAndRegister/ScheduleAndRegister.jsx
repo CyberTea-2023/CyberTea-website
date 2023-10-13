@@ -15,9 +15,7 @@ const NewsSchedule = () => {
           </ul>
         </div>
       </div>
-      <div id="news">
-        <Registration />
-      </div>
+      <Registration />
     </div>
   );
 };
