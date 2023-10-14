@@ -8,10 +8,6 @@
   text-align: center;
 }
 
-.embla__container {
-  display: flex;
-  transition: transform 0.3s linear;
-}
 
 #speaker_container {
   width: 100%;
@@ -30,29 +26,4 @@
 
 #speakers .heading {
   margin-bottom: 25px;
-}
-
-.embla {
-  overflow: hidden;
-  display: flex;
-}
-
-.embla__container {
-  display: flex;
-}
-
-.embla__slide {
-  flex: 0 0 9%;
-  min-width: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.academic .embla__slide {
-  flex: 0 0 25%;
-}
-
-.industry .embla__slide {
-  flex: 0 0 15%;
 }
